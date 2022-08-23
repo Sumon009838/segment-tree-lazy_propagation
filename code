@@ -34,6 +34,7 @@ void rangeupdate(ll ind,ll low,ll high,ll l,ll r,ll val)
             lazy[2*ind]+=val;
             lazy[2*ind+1]+=val;
         }
+        return;
     }
     ll mid=(low+high)/2;
     rangeupdate(2*ind,low,mid,l,r,val);
